@@ -1,7 +1,4 @@
-# Mobility_Patterns_of_Dockless_Scooters_Austin_Texas
-This is the project done by us for the course Machine Learning for Cities.
+# Event Detection based on Dockless Scooter Trips in Austin, Texas
+This is a project done by Soham Mody and Timur Mukhtarov for the course Machine Learning for Cities as a part of our master's in urban data science at CUSP, NYU.
 
-Project by: 
-Soham Mody 
-Timur Mukhtarov
 
