@@ -8,8 +8,6 @@ The issue gets even more out-of-control when masses gather for an event. This ha
 
 We try to answer the following questions in our research:
  ### Can significant social events in Austin be detected using dockless electric scooter data in a predictive manner? Can the demand for scooters be predicted during events like holiday, sporting events, and concerts? Can we come up with a model that incorporates exogenous variables such as location of trip’s origin and trip duration to make predictions? 
- 
-This is a project done by Soham Mody and Timur Mukhtarov for the course Machine Learning for Cities as a part of our master's in urban data science at New York University.
 
 The main code has been divided into 3 parts for ease of understanding. 
 1.) In Preprocessing.ipynb, we download the dockless scooter trip data along with the council district and census tract shapefiles and apply the basic preprocessing steps that we think are needed just doing an initial analysis of the dataset. 
@@ -24,4 +22,4 @@ Also, we can see that, both the Isolation Forest and the Local Outlier Factor mo
 
 Of course, in the case of a huge city like Austin, none of these results can conclusively predict that an event did occur as there could be many external factors for the abnormal shift in the values of these features. Additionally, the results would always need to be validated against real world information to see if they are correct.
 
-
+This is a project done by Soham Mody and Timur Mukhtarov for the course Machine Learning for Cities as a part of our master's in urban data science at New York University.
