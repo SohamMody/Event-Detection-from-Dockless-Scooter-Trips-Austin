@@ -22,6 +22,6 @@ From the results in Modelling.ipynb, we can see that our models predicted many d
 
 Also, we can see that, both the Isolation Forest and the Local Outlier Factor models detect more events compared to the baseline model. This is due to the contamination value being more flexible. Thus, we are able to detect more events even though this may increase the number of normal events being detected as anomalies in some cases. Additionally, we can see how Isolation Forest just sees things on a global scale and classifies events just on that basis which might result in it missing many local outliers and even more normal events being classified as anomalies. But, density-based methods like LOF solve this problem by looking at the observation from a local perspective and are able to detect these local outliers. 
 
-Of course in the case of a huge city like Austin, none of these results can conclusively predict that an event did occur as there could be many external factors for the abnormal shift in the values of these features. Additionally, the results would always need to be validated against real world information to see if they are correct.
+Of course, in the case of a huge city like Austin, none of these results can conclusively predict that an event did occur as there could be many external factors for the abnormal shift in the values of these features. Additionally, the results would always need to be validated against real world information to see if they are correct.
 
 
