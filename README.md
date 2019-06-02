@@ -11,6 +11,17 @@ We try to answer the following questions in our research:
  
 This is a project done by Soham Mody and Timur Mukhtarov for the course Machine Learning for Cities as a part of our master's in urban data science at New York University.
 
-The main code has been divided into 3 parts for ease of understanding. In 
+The main code has been divided into 3 parts for ease of understanding. 
+1.) In Preprocessing.ipynb, we download the dockless scooter trip data along with the council district and census tract shapefiles and apply the basic preprocessing steps that we think are needed just doing an initial analysis of the dataset. 
+
+2.) Then, we use this processed data in EDA.ipynb where we do an exploratory data analysis of the trips dataset. Here, we further do some processing that is needed before feeding the data to the models and also, do some analysis of ridership counts from a time of the day and geospatial point of view. We also aggregate the data by census tract so that, it is easier to do the modelling and anomaly detection.
+
+3.) Finally, we apply 3 models to the prepared data from EDA.ipynb to detect anomalies(events) in Modelling.ipynb. We choose a time-series forecasting model SARIMA as our baseline model and then, apply more sophisticated methods like Isolation Forest and Local Outlier Factor. We also PCA during the latter 2 models to get the 2 most prominent features as visualing the results in 2-D helps us to choose a better contamination value(percentage of total observations which are outliers) for these models.
+
+From the results in Modelling.ipynb, we can see that our models predicted many dates as event. We validated the results by doing a Google search of the predicted dates and found that the models was able to successfully detect events like the Austin City Limits Festival and New Year’s Eve as well as bad weather days.
+
+Also, we can see that, both the Isolation Forest and the Local Outlier Factor models detect more events compared to the baseline model. This is due to the contamination value being more flexible. Thus, we are able to detect more events even though this may increase the number of normal events being detected as anomalies in some cases. Additionally, we can see how Isolation Forest just sees things on a global scale and classifies events just on that basis which might result in it missing many local outliers and even more normal events being classified as anomalies. But, density-based methods like LOF solve this problem by looking at the observation from a local perspective and are able to detect these local outliers. 
+
+Of course in the case of a huge city like Austin, none of these results can conclusively predict that an event did occur as there could be many external factors for the abnormal shift in the values of these features. Additionally, the results would always need to be validated against real world information to see if they are correct.
 
 
