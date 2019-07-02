@@ -10,6 +10,7 @@ We try to answer the following questions in our research:
  ### Can significant social events in Austin be detected using dockless electric scooter data in a predictive manner? Can the demand for scooters be predicted during events like holiday, sporting events, and concerts? Can we come up with a model that incorporates exogenous variables such as location of trip’s origin and trip duration to make predictions? 
 
 The main code has been divided into 3 parts for ease of understanding. 
+
 1.) In Preprocessing.ipynb, we download the dockless scooter trip data along with the council district and census tract shapefiles and apply the basic preprocessing steps that we think are needed just doing an initial analysis of the dataset. 
 
 2.) Then, we use this processed data in EDA.ipynb where we do an exploratory data analysis of the trips dataset. Here, we further do some processing that is needed before feeding the data to the models and also, do some analysis of ridership counts from a time of the day and geospatial point of view. We also aggregate the data by census tract so that, it is easier to do the modelling and anomaly detection.
