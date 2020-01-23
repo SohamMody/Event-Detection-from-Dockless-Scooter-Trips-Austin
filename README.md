@@ -6,7 +6,7 @@ Nevertheless, scooters have seen a fair share of opposition and problems. One of
 
 The issue gets even more out-of-control when masses gather for an event. This had happened in Austin in 2018 during the SXSW festival when scooters became a fun and cheap way to travel to conference events. Thousands of scooters could be found in downtown Austin, many of them obstructed the sidewalks, roads, public and private spaces. Riders were mostly not wearing helmets, cruising at high speeds. Although the city did not announce that they had any issues with it, many residents complained. An issue of forecasting such events (and smaller ones) and tying scooter ridership arises.  
 
-We try to answer the following questions in our research:
+We tried to answer the following questions in our research:
  ### Can significant social events in Austin be detected using dockless electric scooter data in a predictive manner? Can the demand for scooters be predicted during events like holiday, sporting events, and concerts? Can we come up with a model that incorporates exogenous variables such as location of trip’s origin and trip duration to make predictions? 
 
 The main code has been divided into 3 parts for ease of understanding. 
@@ -23,4 +23,4 @@ Also, we can see that, both the Isolation Forest and the Local Outlier Factor mo
 
 Of course, in the case of a huge city like Austin, none of these results can conclusively predict that an event did occur as there could be many external factors for the abnormal shift in the values of these features. Additionally, the results would always need to be validated against real world information to see if they are correct.
 
-This is a project done by Soham Mody and Timur Mukhtarov for the course Machine Learning for Cities as a part of our master's in urban data science at New York University.
+This is a project done by Soham Mody and Timur Mukhtarov for the course Machine Learning for Cities as a part of our master's in applied data science and urban informatics at New York University.
